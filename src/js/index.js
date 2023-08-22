@@ -101,7 +101,7 @@ function messageInfo(sms) {
 
 function clearGallery() {
   totalHitsImg = 0;
-  currentPage = 1;
+  page = 1;
   refs.spanEl.innerHTML = '';
   refs.galleryEl.innerHTML = '';
 }
