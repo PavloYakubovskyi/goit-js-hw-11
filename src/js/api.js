@@ -2,10 +2,12 @@ import axios from 'axios';
 import { API_KEY, BASE_URL, PER_PAGE } from './constans';
 
 export async function getImages(page = 1, value) {
+  const qValue = value;
+
   axios.defaults.baseURL = BASE_URL;
   axios.defaults.params = {
     key: API_KEY,
-    q: value,
+    q: qValue,
     image_type: 'photo',
     orientation: 'horizontal',
     safesearch: true,

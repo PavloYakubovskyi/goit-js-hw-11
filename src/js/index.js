@@ -21,7 +21,7 @@ let totalHitsImg = 0;
 
 async function onSubmitSearch(e) {
   e.preventDefault();
-  const value = e.currentTarget.elements.searchQuery.value.trim();
+  value = e.currentTarget.elements.searchQuery.value.trim();
   if (!value) {
     message('Please write correct data!');
     return;
